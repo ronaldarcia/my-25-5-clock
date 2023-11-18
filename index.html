@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_25+5_Clock</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/e3aacced23.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <section id="header">
+      <h1 id="header-text">My 25+5 Pomodoro Clock</h1>
+    </section>
+
+    <section id="config">
+      <div id="break-controls">
+        <div id="element1">
+          <h2 id="break-label">Break Length</h2>
+          <button type="button" id="break-increment">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <span id="break-length">5</span>
+          <button type="button" id="break-decrement">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="session-controls">
+        <div id="element2">
+          <h2 id="session-label">Session Length</h2>
+          <button type="button" id="session-increment">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+          <span id="session-length">25</span>
+          <button type="button" id="session-decrement">
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="display">
+      <h2 id="timer-label">Session</h2>
+      <div id="time-left"></div>
+      <div id="btn-div">
+        <button type="button" id="start_stop">
+          <i class="fa-solid fa-play" aria-hidden="true"></i
+          ><i class="fa-solid fa-pause" aria-hidden="true"></i>
+        </button>
+        <button type="button" id="reset">
+          <i class="fa-solid fa-sync" aria-hidden="true"></i>
+        </button>
+      </div>
+      <audio
+        src="./audio/mixkit-system-beep-buzzer-fail-2964.wav"
+        id="beep"
+        muted
+      ></audio>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
